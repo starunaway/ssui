@@ -1,7 +1,9 @@
-import {default as Button} from './components/Button';
-import {default as Input} from './components/Input';
+import Button from './components/Button';
+import Icon from './components/Icon';
 
-const components = [Button, Input];
+// import Input from './components/Input';
+
+const components = [Button, Icon];
 
 const install = (app) => {
   components.forEach((component) => {
@@ -13,7 +15,13 @@ const install = (app) => {
   return app;
 };
 
-export {Button, Input};
+if (typeof window !== 'undefined' && window.Vue) {
+  install(window.Vue);
+}
+
+export {Button, Icon};
+
 export default {
+  version: process.env.VERSION,
   install,
 };
