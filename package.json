@@ -6,7 +6,7 @@
   "main": "dist/ssv-ui.js",
   "scripts": {
     "start": "webpack-dev-server --content-base test/ --open --inline --hot --compress --history-api-fallback --port 8081 --config webpack/webpack.dev.config.js",
-    "dist:style": "gulp --gulpfile webpack/build-style.js",
+    "dist:style": "gulp --gulpfile webpack/gulp-style.js",
     "dist:dev": "webpack --config webpack/webpack.dist.dev.config.js",
     "dist:prod": "webpack --config webpack/webpack.dist.prod.config.js",
     "build": "npm run dist:style && npm run dist:dev && npm run dist:prod "
@@ -36,6 +36,7 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "babel-loader": "^7.1.5",
     "babel-plugin-dynamic-import-node": "^1.2.0",
     "babel-plugin-syntax-jsx": "^6.18.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -54,7 +55,7 @@
     "extract-text-webpack-plugin": "^2.1.2",
     "file-loader": "^1.1.11",
     "friendly-errors-webpack-plugin": "^1.6.1",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-clean-css": "^3.10.0",
     "gulp-less": "^4.0.1",

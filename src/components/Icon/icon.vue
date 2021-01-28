@@ -12,7 +12,7 @@ export default {
 
   computed: {
     classname() {
-      let classname = `ss-icon icon-${this.type}`;
+      let classname = `sumscope-icon icon-${this.type}`;
       return this.disabled ? `${classname} disabled` : classname;
     },
   },
@@ -20,9 +20,8 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import '../../styles/theme.less';
-
-.ss-icon {
+@import '../../styles/index.less';
+.sumscope-icon {
   color: @icon-normal-color;
   font-size: 18px;
 
@@ -33,7 +32,7 @@ export default {
     color: @icon-active-color;
   }
 }
-.ss-icon.disabled {
+.sumscope-icon.disabled {
   color: @icon-disabled-color;
 }
 </style>
