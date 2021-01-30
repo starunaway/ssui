@@ -54,6 +54,10 @@ export default {
   outline: none;
   border: none;
   padding: @normal-padding;
+  display: inline-block;
+  font-size: @normal-font-size;
+  box-sizing: border-box;
+  font-family: MicrosoftYaHei;
 
   &:hover {
     background: @btn-hover-bgcolor;
