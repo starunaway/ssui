@@ -1,5 +1,5 @@
 <template>
-  <i :class="classname"></i>
+  <i :class="classname" @click="handleClick"></i>
 </template>
 
 <script>
@@ -14,6 +14,11 @@ export default {
     classname() {
       let classname = `sumscope-icon icon-${this.type}`;
       return this.disabled ? `${classname} disabled` : classname;
+    },
+  },
+  methods: {
+    handleClick(e) {
+      this.$emit('click', e);
     },
   },
 };

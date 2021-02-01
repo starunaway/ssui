@@ -6,8 +6,8 @@
     <s-button type="danger"> Danger </s-button>
     <s-button type="primary"> 按钮 </s-button>
     <s-button type="link"> Link </s-button>
-    <!-- <s-icon type="double-up"></s-icon> -->
-    <s-checkbtn @check="handleCheckBtn">+0</s-checkbtn>
+    <s-icon type="double-up" @click="handleIconClick"></s-icon>
+    <s-checkbtn :checked="true" @check="handleCheckBtn">+0</s-checkbtn>
   </div>
 </template>
 
@@ -29,6 +29,10 @@ export default {
     },
     handleCheckBtn(v) {
       console.log('handleCheckBtn', v);
+      this.$forceUpdate();
+    },
+    handleIconClick() {
+      console.log('handleIconClick');
     },
   },
 };

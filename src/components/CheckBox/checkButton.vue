@@ -21,6 +21,11 @@ export default {
       default: 64,
     },
   },
+  watch: {
+    checked(checked) {
+      this.isChecked = checked;
+    },
+  },
   computed: {
     className() {
       let className = 's-checkbutton';
