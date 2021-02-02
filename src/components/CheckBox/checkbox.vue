@@ -70,7 +70,7 @@ export default {
       }
       const checked = event.target.checked;
       this.isChecked = checked;
-      this.$emit('checked', checked);
+      this.$emit('change', checked);
     },
   },
 };

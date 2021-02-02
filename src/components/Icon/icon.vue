@@ -29,6 +29,12 @@ export default {
 .sumscope-icon {
   color: @icon-normal-color;
   font-size: 18px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
 
   &:hover {
     color: @icon-hover-color;
