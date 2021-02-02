@@ -47,13 +47,13 @@ export default {
   methods: {
     handleCheck() {
       this.isChecked = !this.isChecked;
-      this.$emit('check', this.isChecked);
+      this.$emit('change', this.isChecked);
     },
   },
 };
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 @import '../../styles/theme.less';
 
 .s-checkbutton {

@@ -24,7 +24,7 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 @import '../../styles/index.less';
 .sumscope-icon {
   color: @icon-normal-color;
@@ -32,9 +32,11 @@ export default {
 
   &:hover {
     color: @icon-hover-color;
+    background: #eafffc;
   }
   &:active {
     color: @icon-active-color;
+    background: #83b5af;
   }
 }
 .sumscope-icon.disabled {

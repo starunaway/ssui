@@ -6,8 +6,12 @@
     <s-button type="danger"> Danger </s-button>
     <s-button type="primary"> 按钮 </s-button>
     <s-button type="link"> Link </s-button>
-    <s-icon type="double-up" @click="handleIconClick"></s-icon>
+    <s-icon type="delete" @click="handleIconClick"></s-icon>
     <s-checkbtn :checked="true" @check="handleCheckBtn">+0</s-checkbtn>
+    <s-checkbox>张三张三张三张三张三张三</s-checkbox>
+    <s-checkbox :checked="true">张三张三张三张三张三张三</s-checkbox>
+    <s-checkbox :checked="true" :disabled="true">张三张三张三张三张三张三</s-checkbox>
+    <s-checkbox :disabled="true">张三张三张三张三张三张三</s-checkbox>
   </div>
 </template>
 
@@ -21,6 +25,7 @@ export default {
     's-button': Button,
     's-icon': Icon,
     's-checkbtn': CheckBtn,
+    's-checkbox': CheckBox,
   },
   name: 'Demo',
   methods: {

@@ -41,7 +41,7 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 @import '../../styles/theme.less';
 .ss-btn {
   background: @btn-bgcolor;

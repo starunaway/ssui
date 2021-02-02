@@ -1,7 +1,7 @@
 {
   "name": "ssv-ui",
   "title": "SSV UI",
-  "version": "0.0.1-alpha5",
+  "version": "0.0.1-alpha6",
   "description": "vue components",
   "main": "dist/ssv-ui.js",
   "scripts": {
