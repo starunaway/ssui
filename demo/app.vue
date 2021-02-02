@@ -12,13 +12,15 @@
     <s-checkbox :checked="true">张三张三张三张三张三张三</s-checkbox>
     <s-checkbox :checked="true" :disabled="true">张三张三张三张三张三张三</s-checkbox>
     <s-checkbox :disabled="true">张三张三张三张三张三张三</s-checkbox>
+    <s-input-number :value="88" @change="handleInputNumberChange"></s-input-number>
   </div>
 </template>
 
 <script>
-import {Button, Icon, CheckBox} from 'ssv-ui';
+import {Button, Icon, CheckBox, Input} from 'ssv-ui';
 
 const CheckBtn = CheckBox.CheckButton;
+const InputNumber = Input.InputNumber;
 
 export default {
   components: {
@@ -26,6 +28,7 @@ export default {
     's-icon': Icon,
     's-checkbtn': CheckBtn,
     's-checkbox': CheckBox,
+    's-input-number': InputNumber,
   },
   name: 'Demo',
   methods: {
@@ -38,6 +41,9 @@ export default {
     },
     handleIconClick() {
       console.log('handleIconClick');
+    },
+    handleInputNumberChange(value) {
+      console.log('handleInputNumberChange', value);
     },
   },
 };

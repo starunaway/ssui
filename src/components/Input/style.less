@@ -1,0 +1,25 @@
+@import '../../styles/index.less';
+
+.ss-input {
+  height: @normal-height;
+  border-radius: @normal-border-radius;
+  border: 1px solid #dcdcdc;
+  font-family: MicrosoftYaHei;
+  font-size: 12px;
+  color: #000000;
+  display: inline-block;
+  box-sizing: border-box;
+  &:hover {
+    border: 1px solid #039e86;
+  }
+  input {
+    border: none;
+    height: @normal-height - 2px;
+    box-sizing: border-box;
+    caret-color: #039e86;
+    width: 100%;
+  }
+}
+.ss-input.ss-input-focus {
+  border: 1px solid #039e86;
+}
