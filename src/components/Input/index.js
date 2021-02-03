@@ -1,5 +1,5 @@
-import InputNumber from './InputNumber';
-import Input from './Input';
+import InputNumber from './inputNumber';
+import Input from './input';
 // import Base from '../base';
 
 /* istanbul ignore next */

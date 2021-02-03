@@ -1,6 +1,14 @@
 <template>
   <div :class="wrapperClass" :style="{width: `${width}px`}">
-    <input v-model.number="number" type="number" @focus="handleFocus" @blur="handleBlur" @input="handleInput" />
+    <input
+      v-model.number="number"
+      type="number"
+      :disabled="disabled"
+      @focus="handleFocus"
+      @blur="handleBlur"
+      @input="handleInput"
+      @change="handleInputChange"
+    />
   </div>
 </template>
 
@@ -34,8 +42,16 @@ export default {
       if (this.disabled) {
         return;
       }
+      this.$emit('input', this.number);
+    },
+
+    handleInputChange() {
+      if (this.disabled) {
+        return;
+      }
       this.$emit('change', this.number);
     },
+
     handleFocus() {
       this.isFocus = true;
     },
